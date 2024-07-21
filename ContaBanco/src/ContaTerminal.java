@@ -12,9 +12,8 @@ public class ContaTerminal {
             System.out.println("Por favor, digite o número da Conta:");  //  interação
 
             int numero = scanner.nextInt();                             //  captura e atribui
-            
-            scanner.nextLine();                                       //  quebra de linha
-            
+            scanner.nextLine();
+                                       
             System.out.println("Por favor, digite o número da Agência:");   //  interação
 
             String agencia = scanner.nextLine();                            //  captura e atribui
@@ -27,10 +26,12 @@ public class ContaTerminal {
 
             int saldo = scanner.nextInt();  //  captura e atribui
             
-            String mensagem = "Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é "
+            String mensagem = " Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é "
                     + agencia + ", conta " + numero + " e seu saldo " + saldo + " já está disponível para saque.";
             
             System.out.println(mensagem);            //  concatenação variáveis
+            
+            scanner.close();        
         }
     }
 }   
